@@ -39,4 +39,8 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  $('.carousel').carousel({
+  interval: 3000
+})
+
 })(jQuery); // End of use strict

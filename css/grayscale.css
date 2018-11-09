@@ -6,7 +6,7 @@
 .about-trigger {
   font-size : 30px;
   padding-top: 300px;
-    
+
 }
 
 #mainNav {
@@ -89,6 +89,17 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+}
+
+/* Caroussel */
+
+
+
+.carousel-indicators li{
+    width: 12px ;
+    height: 12px;
+    border-radius: 50%;
+    margin:0 .3em;
 }
 
 .masthead {
