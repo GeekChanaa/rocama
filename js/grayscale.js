@@ -40,7 +40,7 @@
   $(window).scroll(navbarCollapse);
 
   $('.carousel').carousel({
-  interval: 3000
+  interval: 2000
 })
 
 })(jQuery); // End of use strict
