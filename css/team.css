@@ -95,6 +95,7 @@
     opacity: 1;
     transform: translateX(0);
 }
+
 .box .icon li{
     margin: 0 4px;
     display: inline-block;
@@ -122,7 +123,7 @@
 }
 
 .coord{
-    
+
 }
 
 /* simo*/
