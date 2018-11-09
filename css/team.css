@@ -1,0 +1,79 @@
+:root{
+    --color_1: #fff;
+    --color_2: #292929;
+}
+.box{
+    font-family: 'Comfortaa', cursive;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+}
+.box:hover{ box-shadow: 0 0 10px var(--color_2); }
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease 0s;
+}
+.box:hover img{
+    filter: blur(8px) grayscale(80%);
+    transform: scale(0.8,0.7);
+}
+.box .box-content{
+    color: var(--color_1);
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transition:all 0.3s;
+}
+.box:hover .box-content{
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+}
+.box .title{
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px var(--color_2);
+    margin: 0;
+}
+.box .post{
+    font-size: 17px;
+    text-shadow: 0 0 7px var(--color_2);
+    margin-bottom: 5px;
+    display: block;
+}
+.box .icon{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.box .icon li{ display: inline-block; }
+.box .icon li a{
+    color: var(--color_2);
+    background-color: var(--color_1);
+    font-size: 20px;
+    text-align: center;
+    line-height: 39px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50% 50% 0 0;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.box .icon li a:hover{
+    color: var(--color_1);
+    background-color: var(--color_2);
+    box-shadow: 0 0 15px var(--color_1) ;
+}
+@media only screen and (max-width:990px){
+    .box{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:479px){
+    .box .title{ font-size: 20px; }
+}
