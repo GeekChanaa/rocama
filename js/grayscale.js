@@ -50,9 +50,11 @@
 
   $('.team-member li a').hover(
   function() {
-    $(this).parent().next().slideDown(300);
+    var data=$(this).parent().data('social');
+    $('span[data-social='+data+']').slideDown(300);
   }, function() {
-    $(this).parent().next().slideUp(300);
+    var data=$(this).parent().data('social');
+    $('span[data-social='+data+']').slideUp(300);
   }
 );
 
