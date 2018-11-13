@@ -232,6 +232,33 @@
   }
 }
 
+/* Begin Team members */
+
+.team-member{
+  width : 350px;
+  height: 350px;
+  margin-top : 50px;
+  border-radius: 50%;
+  background-size:cover;
+  border: 8px solid white;
+  box-shadow: 0 10px 8px #c9c9c9;
+}
+
+.team-member .icon span{
+  display:block;
+  margin:0 auto;
+  margin-top:20px;
+  width:60%;
+  height:30px;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color:rgba(83, 83, 83, 0.7) !important;
+}
+
+
+
+/* End team members */
+
 .signup-section {
   padding: 10rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");

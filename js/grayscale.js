@@ -39,8 +39,21 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $('.carousel').carousel({
-  interval: 3240
-})
+  $(document).ready(function() {
+       $('.carousel').carousel({
+           interval: 3000
+       })
+  });
+
+  // Team members
+  $('.team-member .icon span').hide();
+
+  $('.team-member li a').hover(
+  function() {
+    $(this).parent().next().slideDown(300);
+  }, function() {
+    $(this).parent().next().slideUp(300);
+  }
+);
 
 })(jQuery); // End of use strict
