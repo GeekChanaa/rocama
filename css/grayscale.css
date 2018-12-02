@@ -41,6 +41,24 @@
   outline: none;
   background-color: transparent;
 }
+.nav-item a{
+    font-weight: bold;
+    padding-bottom:.1em !important;
+    transition: .2s all ease-in-out;
+}
+.nav-item a:hover{
+  color:white;
+}
+.link-line{
+  display: inline-block;
+  width:0%;
+  height:3px;
+  background:white;
+  transition:.2s all ease-in-out;
+}
+.nav-item a:hover + .link-line{
+  width:100%;
+}
 
 @media (min-width: 992px) {
   #mainNav {
