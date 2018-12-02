@@ -12,14 +12,20 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'/>
     <link href="css/full-slider.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
     <link href="css/tooltips.css" rel="stylesheet">
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    
     <!-- <link href="css/animte.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <script rel="JavaScript" src="sdk/tomtom.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='sdk/map.css'/>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -46,6 +52,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <span class="link-line"></span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#find-us">Find Us !</a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
@@ -259,84 +269,28 @@
 
 </section>
 
+<!-- Where to find us Section -->
+
+<section class="findus-section" style="background-image: url('img/s4.jpg');" id="find-us">
+<div class="where-to-find-us-title" style="">
+  <div style="display: inline-block; width:70%;text-align: right;"><h1> Where To Find Us </h1></div>
+  <div class="animated bounce" style="display:inline-block;font-size:9em;"><i class="ion-location" style="padding-left:40%;color:red"></i>
+
+</div>
+
+</div>
+
+<div id='map' class="map col-md-10 offset-md-1" style="height:70vh;"></div>
+</div>
+
+</section>
 
 
-    <!-- Signup Section -->
-    <section id="signup" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
+    <!-- Subscribe Section -->
+    
+<section class="subscribe-section">
 
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-            <form method="POST" class="form-inline d-flex" action="mail.php">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." name="email">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">rocama.maroc@gmail.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+1 (555) 902-8832</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fas fa-phone"></i>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
+</section>
 
 
     <!-- Footer -->
@@ -347,7 +301,61 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script text="JavaScript">
+
+      tomtom.setProductInfo('Rocama', '1.0.0');
+      tomtom.routingKey('DAkh2hZGNBtuPG9Kyh0ebhBeMGQXRG6T');
+tomtom.searchKey('DAkh2hZGNBtuPG9Kyh0ebhBeMGQXRG6T');
+var map = tomtom.L.map('map', {
+    key: 'DAkh2hZGNBtuPG9Kyh0ebhBeMGQXRG6T',
+    source: 'vector',
+    basePath: 'https://api.tomtom.com/maps-sdk-js/4.43.11/examples/sdk'
+});
+map.zoomControl.setPosition('topright');
+var unitSelector = tomtom.unitSelector.getHtmlElement(tomtom.globalUnitService);
+var languageSelector = tomtom.languageSelector.getHtmlElement(tomtom.globalLocaleService, 'search');
+var unitRow = document.createElement('div');
+var unitLabel = document.createElement('label');
+unitLabel.innerHTML = 'Unit of measurement';
+unitLabel.appendChild(unitSelector);
+unitRow.appendChild(unitLabel);
+unitRow.className = 'input-container';
+var langRow = document.createElement('div');
+var langLabel = document.createElement('label');
+langLabel.innerHTML = 'Search language';
+langLabel.appendChild(languageSelector);
+langRow.appendChild(langLabel);
+langRow.className = 'input-container';
+tomtom.controlPanel({
+    position: 'bottomright',
+    title: 'Settings',
+    collapsed: true
+})
+    .addTo(map)
+    .addContent(unitRow)
+    .addContent(langRow);
+// Adding the route inputs fields widget
+var routeInputs = tomtom.routeInputs().addTo(map);
+// Adding the route widget
+var routeOnMapView = tomtom.routeOnMap().addTo(map);
+// Connecting the routeInputs widget with the routeOnMap widget
+routeInputs.on(routeInputs.Events.LocationsFound, function(eventObject) {
+    routeOnMapView.draw(eventObject.points);
+});
+routeInputs.on(routeInputs.Events.LocationsCleared, function(eventObject) {
+    routeOnMapView.draw(eventObject.points);
+});
+// Show error in widget when location cannot be autodetected
+routeInputs.on(routeInputs.Events.LocationError, function() {
+    routeInputs.showLocationNotFoundMessageBox();
+});
+
+    </script>
+    
+
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
