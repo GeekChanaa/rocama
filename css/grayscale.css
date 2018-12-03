@@ -3,10 +3,69 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+
+
+
+ /* Global styles */
+ :root{
+   --main-green:#6c8f3c;
+ }
+
+/* Start effect */
+
+svg {
+  display: block;
+  font: 13vw 'Montserrat';
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: .4vw;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: white;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: white;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #6c8f3c;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: white;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: white;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
+/* End effect */
+
+
+
 .about-trigger {
   font-size : 30px;
   padding-top: 300px;
-
 }
 
 #mainNav {
@@ -17,8 +76,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: var(--main-green);
+  border: 1px solid var(--main-green);
 }
 
 #mainNav .navbar-toggler:focus {
@@ -44,20 +103,24 @@
 .nav-item a{
     font-weight: bold;
     padding-bottom:.1em !important;
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 .nav-item a:hover{
-  color:white;
+  color:white !important;
 }
 .link-line{
   display: inline-block;
   width:0%;
   height:3px;
   background:white;
-  transition:.2s all ease-in-out;
+  transition:.3s all ease-in-out;
 }
 .nav-item a:hover + .link-line{
   width:100%;
+}
+
+.scrolled #navbarResponsive a:hover{
+  color:black !important;
 }
 
 @media (min-width: 992px) {
@@ -97,21 +160,24 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: var(--main-green);
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: var(--main-green);
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid var(--main-green);
   }
 }
 
 /* Caroussel */
 
 
+.carousel-inner{
+  height:100vh;
+}
 
 .carousel-indicators li{
     width: 12px ;
@@ -193,7 +259,7 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: var(--main-green);
 }
 
 .btn-primary:hover {
@@ -208,6 +274,28 @@
 .btn-primary:active {
   background-color: #467370 !important;
 }
+/* */
+#brand-name{
+  position: absolute;
+  left:50%;
+  top: 18%;
+  z-index: 10;
+
+}
+/* */
+/* Start about section */
+#about{
+  padding:1em 3em;
+  text-align: center;
+}
+#about h1{
+  font-weight: bold;
+  display: inline-block;
+  padding:.2em 1em;
+  margin-bottom:1em;
+  border-bottom:3px solid var(--main-green);
+}
+/* End about section */
 
 .about-section {
   padding-top: 10rem;
@@ -230,7 +318,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid var(--main-green);
   }
 }
 
@@ -244,7 +332,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: var(--main-green);
     border-width: .25rem;
     width: 30%;
   }
@@ -305,7 +393,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid var(--main-green);
 }
 
 .contact-section .card h4 {
@@ -316,7 +404,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: var(--main-green);
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -349,7 +437,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: var(--main-green);
 }
 
 a:focus, a:hover {
@@ -362,11 +450,11 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: var(--main-green) !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: var(--main-green) !important;
 }
 
 footer {
