@@ -3,12 +3,19 @@
 
 
   // Changing the style of fixed navbar when scrolling
-  $(function () {
-  $(document).scroll(function () {
-    var $nav = $(".fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  if($(document).scrollTop() > $(".fixed-top").height()+19){
+    $("#logo").prop('src','img/logo.png');
+  }
+    $(document).scroll(function () {
+    var nav = $(".fixed-top");
+    nav.toggleClass('scrolled',$(document).scrollTop() > nav.height());
+    if($(document).scrollTop() > nav.height()+19){
+      $("#logo").prop('src','img/logo.png');
+    }
+    else{
+      $("#logo").prop('src','img/logo2.png');
+    }
   });
-});
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {

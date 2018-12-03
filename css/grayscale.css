@@ -56,7 +56,7 @@
 
 /* Start effect */
 
-svg {
+svg#rocama {
   display: block;
   font: 13vw 'Montserrat';
   width: 960px;
@@ -142,8 +142,11 @@ animation-delay: -5s;
   outline: none;
   background-color: transparent;
 }
+  /* nav items */
 .nav-item a{
-    font-weight: bold;
+    font-family: Century Gothic;
+    font-size: 15px;
+    font-weight: normal;
     padding-bottom:.1em !important;
     transition: .3s all ease-in-out;
 }
@@ -160,6 +163,8 @@ animation-delay: -5s;
 .nav-item a:hover + .link-line{
   width:100%;
 }
+   /* Dropdown */
+
 
 .scrolled #navbarResponsive a:hover{
   color:black !important;
@@ -208,9 +213,9 @@ animation-delay: -5s;
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: var(--main-green);
+    color:white;
     outline: none;
-    border-bottom: 0.25rem solid var(--main-green);
+    background:var(--main-green);
   }
 }
 
@@ -327,14 +332,28 @@ animation-delay: -5s;
 /* */
 /* Start about section */
 #about{
-  padding:1em 3em;
   text-align: center;
+  display:grid;
+  grid-gap: 2em;
+  grid-template-columns: auto 1fr;
 }
+#about .icon-section{
+  background:var(--main-green);
+  width:300px;
+}
+#about .content-section{
+  padding:1em;
+}
+#about .content-section p{
+  text-align: left;
+}
+
 #about h1{
+  font-family: Century Gothic;
   font-weight: bold;
   display: inline-block;
   padding:.2em 1em;
-  margin-bottom:1em;
+  margin-bottom:.5em;
   border-bottom:3px solid var(--main-green);
 }
 /* End about section */

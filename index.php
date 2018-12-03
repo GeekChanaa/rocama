@@ -1,3 +1,13 @@
+<?php
+  $language=isset($_GET['lng'])?$_GET['lng']:'english';
+  $languages=array('arabic','french','english');
+  if(in_array($language,$languages)){
+    include "languages/".$language.".php";
+  }
+  else{
+    include "languages/english.php";
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +28,7 @@
     <link href="css/tooltips.css" rel="stylesheet">
     <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 
-    
+
     <!-- <link href="css/animte.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
@@ -40,7 +50,7 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img src="img/logo.png" alt="" width="50px">
+          <img id="logo" src="img/logo2.png" alt="" width="50px">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -49,21 +59,31 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about"><?= lang('ABOUT') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#"><?= lang('PROJECTS') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#find-us">Find Us !</a>
+              <a class="nav-link js-scroll-trigger" href="#"><?= lang('FIND_US') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#"><?= lang('CONTACT') ?></a>
               <span class="link-line"></span>
             </li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <?= lang('LANGUAGE') ?>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="?lng=arabic"><?= lang('ARABIC') ?></a>
+                <a class="dropdown-item" href="?lng=french"><?= lang('FRENCH') ?></a>
+                <a class="dropdown-item" href="?lng=english"><?= lang('ENGLISH') ?></a>
+              </div>
+            </div>
           </ul>
         </div>
       </div>
@@ -75,7 +95,7 @@
         <div class="carousel-inner" role="listbox">
           <div id="brand-name">
             <div style="position:relative;left:-50%;">
-              <svg viewBox="0 0 960 300">
+              <svg id="rocama" viewBox="0 0 960 300">
                 <symbol id="s-text">
                   <text text-anchor="middle" x="50%" y="80%">Rocama</text>
                 </symbol>
@@ -106,8 +126,15 @@
 
 
     <section id="about">
-      <h1>About Us</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+      <div class="icon-section">
+
+      </div>
+      <div class="content-section">
+        <h1>About Us</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+      </div>
     </section>
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
@@ -284,7 +311,7 @@
 
 
     <!-- Subscribe Section -->
-    
+
 <section class="subscribe-section">
 
 </section>
@@ -348,7 +375,7 @@ routeInputs.on(routeInputs.Events.LocationError, function() {
 });
 
     </script>
-    
+
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
