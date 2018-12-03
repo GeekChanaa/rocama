@@ -1,3 +1,13 @@
+<?php
+  $language=isset($_GET['lng'])?$_GET['lng']:'english';
+  $languages=array('arabic','french','english');
+  if(in_array($language,$languages)){
+    include "languages/".$language.".php";
+  }
+  else{
+    include "languages/english.php";
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +28,7 @@
     <link href="css/tooltips.css" rel="stylesheet">
     <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 
-    
+
     <!-- <link href="css/animte.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
@@ -37,9 +47,11 @@
   <body id="page-top">
 <!-- email : Rocama.maroc@gmail.com -->
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rocama</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img id="logo" src="img/logo2.png" alt="" width="50px">
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -47,21 +59,33 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about"><?= lang('ABOUT') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#"><?= lang('PROJECTS') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#find-us">Find Us !</a>
+              <a class="nav-link js-scroll-trigger" href="#"><?= lang('FIND_US') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#subscribe">Subscribe</a>
+
+              <a class="nav-link js-scroll-trigger" href="#"><?= lang('CONTACT') ?></a>
               <span class="link-line"></span>
             </li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <?= lang('LANGUAGE') ?>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="?lng=arabic"><?= lang('ARABIC') ?></a>
+                <a class="dropdown-item" href="?lng=french"><?= lang('FRENCH') ?></a>
+                <a class="dropdown-item" href="?lng=english"><?= lang('ENGLISH') ?></a>
+              </div>
+            </div>
           </ul>
         </div>
       </div>
@@ -70,48 +94,50 @@
     <!-- Header -->
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
         <div class="carousel-inner" role="listbox">
+          <div id="brand-name">
+            <div style="position:relative;left:-50%;">
+              <svg id="rocama" viewBox="0 0 960 300">
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">Rocama</text>
+                </symbol>
+
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active">
-            <video autoplay muted loop class="myVideo">
-              <source src="img/rocama 2.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
+          <div class="carousel-item active" style="background:url('img/slide1.png');background-size:cover;">
+
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item">
-            <video autoplay muted loop class="myVideo">
-              <source src="img/rocama.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-color: black">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
-            </div>
-          </div>
+
         </div>
 
       </div>
     </header>
 
 
+    <section id="about">
+      <div class="icon-section">
 
+      </div>
+      <div class="content-section">
+        <h1>About Us</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+      </div>
+    </section>
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
       <div class="container">
@@ -286,6 +312,7 @@
 </section>
 
 
+<<<<<<< HEAD:index.html
 
 <section class="subscribe-section" id="subscribe" style="background-color:#605866">
   <!-- title of section-->
@@ -348,6 +375,11 @@
 -->
 
 
+=======
+    <!-- Subscribe Section -->
+
+<section class="subscribe-section">
+>>>>>>> ace850c14d9e11343756fa9a9751f1b7a5c6ff69:index.php
 
 </section>
 
@@ -411,7 +443,7 @@ routeInputs.on(routeInputs.Events.LocationError, function() {
 });
 
     </script>
-    
+
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>

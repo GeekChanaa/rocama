@@ -1,6 +1,22 @@
 (function($) {
   "use strict"; // Start of use strict
 
+
+  // Changing the style of fixed navbar when scrolling
+  if($(document).scrollTop() > $(".fixed-top").height()+19){
+    $("#logo").prop('src','img/logo.png');
+  }
+    $(document).scroll(function () {
+    var nav = $(".fixed-top");
+    nav.toggleClass('scrolled',$(document).scrollTop() > nav.height());
+    if($(document).scrollTop() > nav.height()+19){
+      $("#logo").prop('src','img/logo.png');
+    }
+    else{
+      $("#logo").prop('src','img/logo2.png');
+    }
+  });
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -60,6 +76,7 @@
     $('span[data-social='+data+']').slideUp(300);
   }
 );
+
 
 })(jQuery); // End of use strict
 
