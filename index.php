@@ -140,11 +140,179 @@
     </section>
 
 
+<section style="height:100vh;background-color:#f4f5f7;">
+  
+<div class="panel panel-default" style="height : 50px;">
+    <div class="col-lg-12 text-center team-title">Team</div>
+</div>
+
+<div class="container" style="margin-top: 13%;">
+    <div class="row">
+        <div class="col-md-4 col-sm-6" >
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/boss.png" alt="">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-title">Williamson</h3>
+                    <span class="post">Web Designer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore ducimus enim eum nam reiciendis repellendus sapiente tempore. Distinctio omnis ratione reiciendis tempora tenetur.?
+                    </p>
+                    <ul class="social-links">
+                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                        <li><a href="#" class="fab fa-skype"></a></li>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/boss.png" alt="">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-title">Williamson</h3>
+                    <span class="post">Web Designer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore ducimus enim eum nam reiciendis repellendus sapiente tempore. Distinctio omnis ratione reiciendis tempora tenetur.?
+                    </p>
+                    <ul class="social-links">
+                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                        <li><a href="#" class="fab fa-skype"></a></li>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/boss.png" alt="">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-title">Williamson</h3>
+                    <span class="post">Web Designer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore ducimus enim eum nam reiciendis repellendus sapiente tempore. Distinctio omnis ratione reiciendis tempora tenetur.?
+                    </p>
+                    <ul class="social-links">
+                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                        <li><a href="#" class="fab fa-skype"></a></li>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Where to find us Section -->
+
+<section class="findus-section" style="background-image: url('img/s4.jpg');" id="find-us">
+
+<div class="where-to-find-us-title text-center" style="">
+  <div style="display: inline-block; width:70%;text-align: right;"><h1> Where To Find Us </h1></div>
+  <div class="animated bounce" style="display:inline-block;font-size:9em;"><i class="ion-location" style="padding-left:40%;color:red"></i>
+
+</div>
+
+</div>
+
+<div id='map' class="map col-md-10 offset-md-1" style="height:70vh;"></div>
+
+</div>
+
+</section>
+
+
+
+<section class="subscribe-section" id="subscribe" style="background-color:#605866">
+  <!-- title of section-->
+  <div class="sub-title text-center">
+    <div class="" style="background-image: url('img/22.png');background-size:cover; ;height: 9vh;width: 9vh; margin-left:46%;margin-bottom: 3%;"> </div>
+    <h1>Subscribe To Receive News !!</h1>
+  </div>
+<div class="col-lg-8 offset-lg-3 sub-form">
+  <form method="POST" class="text-center form-inline d-flex" action="mail.php">
+    
+  
+    <input class="inp-sub" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." name="email" style="">
+    <button type="submit" class="sub-btn btn btn-primary animated">Subscribe</button>
+  </form>
+</div>
+
+<!-- Join Us On Social Media -->
+
+<div class="socials col-lg-12">
+  <div class="socia-title">
+    <h1 class="col-lg-4 offset-lg-4 text-center" style="font-size:3em;
+  font-family: 'Nunito';
+  color:white;"> Join Us </h1>
+  </div>
+</div>
+<div class="col-lg-12" style="position:absolute;height:50%;padding-top: 5%;">
+  <div class="informat col-lg-3" style="margin-left:4%;background-image: url('img/A1.jpg');">
+    <!-- Mail -->
+    <div class="icon-informat col-lg-4 offset-lg-4" style="height:100px;background-image: url('img/email.png');margin-top: 40px;"> </div>
+    <div class="col-lg-12 text-center" style="position:absolute; padding-top: 60px;padding-left: 0 !important;">
+      <h1>Email</h1>
+     </div>
+     <div class="text-center col-lg-10" style="position:absolute;">
+       <h2 style="font-size: 1.5rem; padding-top: 190px;">rocama.maroc@gmail.com</h2>
+     </div>
+  </div>
+  <div class="informat col-lg-3 offset-lg-1" style="background-image: url('img/A2.jpg');">
+    <!-- Phone Number -->
+    <div class="icon-informat col-lg-4 offset-lg-4" style="height:110px;background-image: url('img/phone.png');margin-top: 40px;"> </div>
+    <div class="col-lg-12 text-center" style="position:absolute; padding-top: 60px;padding-left: 0 !important;">
+      <h1 style="">Phone</h1>
+     </div>
+     
+      <div class="text-center col-lg-11"  style="position:absolute;">
+       <h2 style="font-size: 1.5rem; padding-top: 190px;">06 10 61 44 76</h2>
+     </div>
+  </div>
+  <div class="informat col-lg-3 offset-lg-1" style="background-image:url('img/A3.jpg');">
+    <!-- Address -->
+    <div class="icon-informat col-lg-4 offset-lg-4" style="background-image: url('img/address.png'); height:110px;;margin-top: 40px;"> </div>
+    <div class="col-lg-12" style="position:absolute; padding-top: 60px;padding-left: 0 !important;">
+      <h1 style="text-align: center;">Address</h1>
+     </div>
+     <div class="text-center col-lg-11"  style="position:absolute;">
+       <h2 style="font-size: 1.5rem; padding-top: 190px;"> Av . something something</h2>
+     </div>
+
+  </div>
+</div>
+</section>
+
 
 
     <!-- Footer -->
+
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
+        <div class="social-btns col-lg-12 offset-4">
+        <a class="btn facebook" href="#"> 
+            <i class="fa ion-social-facebook"></i>
+        </a>
+        <a class="btn twitter" href="#">
+            <i class="fa ion-social-whatsapp"></i>
+        </a>
+        <a class="btn google" href="#">
+            <i class="fa ion-social-whatsapp"></i></a>
+        <a class="btn dribbble" href="#">
+            <i class="fa ion-social-whatsapp"></i>
+        </a>
+        <a class="btn skype" href="#">
+            <i class="fa ion-social-instagram"></i>
+        </a>
+</div>
+</div>
+      <div class="container" style="padding-top:20px;font-size:15px">
         Copyright &copy; Rocama 2018
       </div>
     </footer>
