@@ -6,10 +6,18 @@
   if($(document).scrollTop() > $(".fixed-top").height()+19){
     $("#logo").prop('src','img/logo.png');
   }
+  $(window).resize(function(e){
+    if($(this).width()<975){
+      $("#logo").prop('src','img/logo.png');
+    }
+    else{
+      $("#logo").prop('src','img/logo2.png');
+    }
+  });
     $(document).scroll(function () {
     var nav = $(".fixed-top");
     nav.toggleClass('scrolled',$(document).scrollTop() > nav.height());
-    if($(document).scrollTop() > nav.height()+19){
+    if($(document).scrollTop() > nav.height()+45){
       $("#logo").prop('src','img/logo.png');
     }
     else{

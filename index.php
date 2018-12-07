@@ -63,31 +63,28 @@
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#"><?= lang('PROJECTS') ?></a>
+              <a class="nav-link js-scroll-trigger" href="#projects"><?= lang('PROJECTS') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#"><?= lang('FIND_US') ?></a>
+              <a class="nav-link js-scroll-trigger" href="#findus-section"><?= lang('FIND_US') ?></a>
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#"><?= lang('CONTACT') ?></a>
               <span class="link-line"></span>
             </li>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <?= lang('LANGUAGE') ?>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="?lng=arabic"><?= lang('ARABIC') ?></a>
-                <a class="dropdown-item" href="?lng=french"><?= lang('FRENCH') ?></a>
-                <a class="dropdown-item" href="?lng=english"><?= lang('ENGLISH') ?></a>
+            <div class="dropdwn">
+              <button class="dropbtn"><?= lang('LANGUAGE')?></button>
+              <div class="dropdwn-content">
+                <a href="?lng=english"><?= lang('ENGLISH')?></a>
+                <a href="?lng=french"><?= lang('FRENCH')?></a>
+                <a href="?lng=arabic"><?= lang('ARABIC')?></a>
               </div>
             </div>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Header -->
     <header>
@@ -114,8 +111,7 @@
           <div class="carousel-item active" style="background:url('img/slide1.png');background-size:cover;">
 
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <h3>Production des grains de plastique</h3>
             </div>
           </div>
 
@@ -124,174 +120,128 @@
       </div>
     </header>
 
-
+    <!-- About section -->
     <section id="about">
       <div class="icon-section">
 
       </div>
       <div class="content-section">
-        <h1>About Us</h1>
+        <h1 class="section-title">About Us</h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
       </div>
     </section>
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
-      <div class="container">
 
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+    <!-- Projects section -->
+    <section id="projects">
+        <h1 class="section-title"> Our Projects </h1>
+        <div class="project-items">
+          <div class="item">
+            <div class="image-container" style="background-image:url('img/bg-masthead.jpg')">
+
+            </div>
+            <div class="infos-container">
+              <h1>Project 1 : Lorem Ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officiis aliquam, odio inventore quibusdam aliquid asperiores totam ratione qui vitae.</p>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          <div class="item">
+            <div class="image-container" style="background-image:url('img/bg-masthead.jpg')">
+
+            </div>
+            <div class="infos-container">
+              <h1>Project 1 : Lorem Ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officiis aliquam, odio inventore quibusdam aliquid asperiores totam ratione qui vitae.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container" style="background-image:url('img/bg-masthead.jpg')">
+
+            </div>
+            <div class="infos-container">
+              <h1>Project 1 : Lorem Ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officiis aliquam, odio inventore quibusdam aliquid asperiores totam ratione qui vitae.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container" style="background-image:url('img/bg-masthead.jpg')">
+
+            </div>
+            <div class="infos-container">
+              <h1>Project 1 : Lorem Ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officiis aliquam, odio inventore quibusdam aliquid asperiores totam ratione qui vitae.</p>
             </div>
           </div>
         </div>
-
-        <!-- Project One Row -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Misty</h4>
-                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Misty</h4>
-                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </section>
 
     <!-- Team Section -->
   <section>
-<div class="panel panel-default" style="height : 50px;">
-    <div class="panel-body">A Basic Panel</div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-sm-">
-            <div class="box team-member" style="background-image:url('img/demo-image-02.jpg');">
-                <div class="box-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Manager</span>
-                    <ul class="icon">
-                        <li data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37 " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li data-social='phone'><a href="#"><i class="fas fa-phone"></i></a></li>
-                        <li data-social='instagram'><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <span data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37"></a>Facebook.com/Chanaa</span>
-                        <span data-social='phone'>0666707512</span>
-                        <span data-social='instagram'>@SimoChanaa</span>
+    <div class="panel panel-default" style="height : 50px;">
+      <div class="panel-body">A Basic Panel</div>
+  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-">
+                <div class="box team-member" style="background-image:url('img/demo-image-02.jpg');">
+                    <div class="box-content">
+                        <h3 class="title">Williamson</h3>
+                        <span class="post">Manager</span>
+                        <ul class="icon">
+                            <li data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37 " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li data-social='phone'><a href="#"><i class="fas fa-phone"></i></a></li>
+                            <li data-social='instagram'><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <span data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37"></a>Facebook.com/Chanaa</span>
+                            <span data-social='phone'>0666707512</span>
+                            <span data-social='instagram'>@SimoChanaa</span>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <div class="box team-member" style="background-image:url('img/demo-image-01.jpg');">
-                <div class="box-content">
-                    <h3 class="title">Miranda Roy</h3>
-                    <span class="post">Manager</span>
-                    <ul class="icon">
-                        <li data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37 " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li data-social='phone'><a href="#"><i class="fas fa-phone"></i></a></li>
-                        <li data-social='instagram'><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <span data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37"></a>Facebook.com/Chanaa</span>
-                        <span data-social='phone'>0666707512</span>
-                        <span data-social='instagram'>@SimoChanaa</span>
-                    </ul>
+            <div class="col-md-6 col-sm-12">
+                <div class="box team-member" style="background-image:url('img/demo-image-01.jpg');">
+                    <div class="box-content">
+                        <h3 class="title">Miranda Roy</h3>
+                        <span class="post">Manager</span>
+                        <ul class="icon">
+                            <li data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37 " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li data-social='phone'><a href="#"><i class="fas fa-phone"></i></a></li>
+                            <li data-social='instagram'><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <span data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37"></a>Facebook.com/Chanaa</span>
+                            <span data-social='phone'>0666707512</span>
+                            <span data-social='instagram'>@SimoChanaa</span>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3 col-sm-6">
-          <div class="coord" >
-            <div class="box team-member" style="background-image:url('img/bg-masthead.jpg');">
-                <div class="box-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Secratary</span>
-                    <ul class="icon">
-                        <li data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37 " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li data-social='phone'><a href="#"><i class="fas fa-phone"></i></a></li>
-                        <li data-social='instagram'><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <span data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37"></a>Facebook.com/Chanaa</span>
-                        <span data-social='phone'>0666707512</span>
-                        <span data-social='instagram'>@SimoChanaa</span>
-                    </ul>
-                  </div>
-                </div>
-            <h1 class="text-center" style="margin-top:5px;">adnane</h1>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-sm-6">
+              <div class="coord" >
+                <div class="box team-member" style="background-image:url('img/bg-masthead.jpg');">
+                    <div class="box-content">
+                        <h3 class="title">Williamson</h3>
+                        <span class="post">Secratary</span>
+                        <ul class="icon">
+                            <li data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37 " target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li data-social='phone'><a href="#"><i class="fas fa-phone"></i></a></li>
+                            <li data-social='instagram'><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <span data-social='facebook'><a href="https://www.facebook.com/mohamed.chanaa.37"></a>Facebook.com/Chanaa</span>
+                            <span data-social='phone'>0666707512</span>
+                            <span data-social='instagram'>@SimoChanaa</span>
+                        </ul>
+                      </div>
+                    </div>
+                <h1 class="text-center" style="margin-top:5px;">adnane</h1>
+              </div>
+            </div>
         </div>
     </div>
-</div>
-
-</section>
+  </section>
 
 <!-- Where to find us Section -->
 
