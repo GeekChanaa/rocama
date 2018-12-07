@@ -71,9 +71,11 @@
               <span class="link-line"></span>
             </li>
             <li class="nav-item">
+
               <a class="nav-link js-scroll-trigger" href="#subscribe">Subscribe</a>
 
               <a class="nav-link js-scroll-trigger" href="#"><?= lang('CONTACT') ?></a>
+
               <span class="link-line"></span>
             </li>
             <div class="dropdown">
@@ -379,7 +381,7 @@
     <!-- Subscribe Section -->
 
 <section class="subscribe-section">
->>>>>>> ace850c14d9e11343756fa9a9751f1b7a5c6ff69:index.php
+
 
 </section>
 
