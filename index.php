@@ -72,7 +72,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#subscribe">Subscribe</a>
-
+              <span class="link-line"></span>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#"><?= lang('CONTACT') ?></a>
               <span class="link-line"></span>
             </li>
@@ -272,8 +274,8 @@
   </div>
 <div class="col-lg-8 offset-lg-3 sub-form">
   <form method="POST" class="text-center form-inline d-flex" action="mail.php">
-    
-  
+
+
     <input class="inp-sub" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." name="email" style="">
     <button type="submit" class="sub-btn btn btn-primary animated">Subscribe</button>
   </form>
