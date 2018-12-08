@@ -310,7 +310,6 @@ animation-delay: -5s;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -395,33 +394,52 @@ animation-delay: -5s;
 /* Start about section */
 #about{
   text-align: center;
-  display:grid;
-  grid-gap: 2em;
-  grid-template-columns: auto 1fr;
+  padding:3em 1em;
 }
-#about .icon-section{
-  background:var(--main-green);
-  width:300px;
+.paragraph-container{
+  display: grid;
+  width:95%;
+  margin:3em;
+  grid-gap:3em;
+  grid-template-columns: 1fr 35%;
 }
 .content-section{
-  padding:1em;
+  text-align: left;
+}
+.content-section h2{
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #3e3e3e;
+}
+.content-section span{
+  font-weight:bold;
+  color:var(--main-green);
 }
 .content-section p{
-  text-align: left;
-  font-size: 1.2vw;
-  color: #707070;
-  font-style: italic;
-  margin:1em 0;
-}
-
-.section-title{
-  font-size: 40px;
+  color:#4b4b4b;
   font-family: Century Gothic;
-  font-weight: bold;
-  display: inline-block;
-  padding:.2em 1em;
-  margin-bottom:.5em;
-  border-bottom:3px solid var(--main-green);
+  font-size: 1.3vw;
+  padding-left:1em;
+  border-left:3px solid var(--main-green);
+  margin-left:.8em;
+}
+.thumbnail{
+  height:100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 9px 10px #0000004d;
+  position:relative;
+  z-index: 2;
+}
+.thumbnail-border{
+  position:absolute;
+  z-index:1;
+  width:100%;
+  height:100%;
+  border:3px solid black;
+  bottom:-20px;
+  left:-20px;
 }
 /* End about section */
 

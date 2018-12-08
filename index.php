@@ -128,20 +128,40 @@
 
     <!-- About section -->
     <section id="about">
-      <div class="icon-section">
+      <h1>About Us</h1>
+      <div class="section-container">
+        <div class="paragraph-container">
+          <div class="content-section">
+            <h2>Our <span>History</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus inventore, porro natus tempora veniam perferendis, non ullam veritatis recusandae a soluta deserunt. Tempore reiciendis harum recusandae dignissimos provident repellat ut sequi omnis delectus dolorem quaerat nulla corrupti consequuntur quisquam vel, excepturi hic sit natus minus, nobis! Impedit natus sequi quo. Ducimus dolore sapiente nobis dolor, laboriosam perferendis assumenda nemo placeat. Iusto similique animi voluptate ipsum amet ea odio perspiciatis sequi eum illo excepturi nesciunt ipsam minus ab saepe inventore unde, ad praesentium sint eveniet rem, quidem porro voluptas. Tempore nesciunt recusandae veniam reiciendis corrupti quam culpa reprehenderit repudiandae nostrum perferendis.</p>
+          </div>
+          <div class="thumbnail-section" style="position:relative;">
+            <div class="thumbnail" style="background-image:url('img/history.jpg')">
 
-      </div>
-      <div class="content-section">
-        <h1 class="section-title">About Us</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro quam ut voluptate cumque optio sint harum praesentium pariatur facere, amet, repellendus ea repudiandae dolores maxime et sunt! Sit, laborum.</p>
+            </div>
+            <div class="thumbnail-border">
+            </div>
+          </div>
+        </div>
+        <div class="paragraph-container" style="grid-template-columns: 35% 1fr">
+          <div class="thumbnail-section" style="position:relative;">
+            <div class="thumbnail" style="background-image:url('img/goals.jpg')">
+            </div>
+            <div class="thumbnail-border">
+            </div>
+          </div>
+          <div class="content-section">
+
+            <h2>Our <span>Goals</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem magnam maxime autem assumenda, repellendus nesciunt sapiente pariatur debitis, cupiditate tenetur reprehenderit doloremque, beatae maiores vel facilis alias ducimus mollitia. Voluptas praesentium quod dolores saepe voluptate, molestias magnam id voluptates nostrum in nisi ea at quisquam aliquid sunt perspiciatis, officia neque fuga, perferendis quam corporis, vel. Magnam ab nihil voluptatum maiores incidunt mollitia harum porro nesciunt molestiae rerum modi, voluptate temporibus labore, perspiciatis consectetur est magni iure quia fuga odio aspernatur itaque minima placeat! Nesciunt sequi nam odit consequatur, minima itaque hic. At nam repellendus, odit cum ab fuga dolores nobis?</p>
+          </div>
+        </div>
       </div>
     </section>
 
 
 <section style="height:100vh;background-color:#f4f5f7;">
-  
+
 <div class="panel panel-default" style="height : 50px;">
     <div class="col-lg-12 text-center team-title">Team</div>
 </div>
@@ -237,8 +257,8 @@
   </div>
 <div class="col-lg-8 offset-lg-3 sub-form">
   <form method="POST" class="text-center form-inline d-flex" action="mail.php">
-    
-  
+
+
     <input class="inp-sub" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." name="email" style="">
     <button type="submit" class="sub-btn btn btn-primary animated">Subscribe</button>
   </form>
@@ -270,7 +290,7 @@
     <div class="col-lg-12 text-center" style="position:absolute; padding-top: 60px;padding-left: 0 !important;">
       <h1 style="">Phone</h1>
      </div>
-     
+
       <div class="text-center col-lg-11"  style="position:absolute;">
        <h2 style="font-size: 1.5rem; padding-top: 190px;">06 10 61 44 76</h2>
      </div>
@@ -296,7 +316,7 @@
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
         <div class="social-btns col-lg-12 offset-4">
-        <a class="btn facebook" href="#"> 
+        <a class="btn facebook" href="#">
             <i class="fa ion-social-facebook"></i>
         </a>
         <a class="btn twitter" href="#">
